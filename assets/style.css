@@ -17,7 +17,8 @@ header{
     height: 70px;
     width: 100%;
     background-color: #ffffff;
-    border-color: #cccccc;  
+    border-color: #cccccc; 
+    border-bottom: solid; 
     font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
