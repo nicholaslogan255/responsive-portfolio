@@ -1,74 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Nic Logan - Home</title>
+    <title>Nicholas Logan</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/reset.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="public/css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="public/css/main.css" />
     <script src="main.js"></script>
 </head>
 
-<body background="images/rhombus.png">
+<body>
+
+    <div id="bg"></div>
 
     <header>
-        <!-- Box to ensure header content is same size as main content for aestetics -->
-        <div id="headerbox">
-            <div id="name">Nic Logan</div>
-            <div id="navlinks">
-                <p>
-                    <a href="index.html">About </a>
-                    &nbsp;| &nbsp;
-                    <a href="portfolio.html"> Portfolio </a>
-                    &nbsp; | &nbsp;
-                    <a href="contact.html"> Contact</a>
-                </p>
-            </div>
-        </div>
+        <a href="https://github.com/nicholaslogan255">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/nicholas-logan-0615b3126/">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
     </header>
 
-    <section>
-        <h1>About Me</h1>
-        <hr>
-        <img src="assets/images/Profile Picture.PNG" alt="me" width="200px" height="200px">
+    <main>
 
-        <p>
-            I am a Front End Web Developer. I discovered my talent for website creation when I took a web development course for my Computer
-            Science degree. I saw the broad-reaching application of websites in a new way that I wanted to be involved in.
-            Since then, I completed the University of Minnesota’s Coding Bootcamp, a twelve week, full-stack web developer
-            certification program. During my time there, I worked independently and in groups to create diverse web applications.
-            My strongest skills for web development are HTML, CSS, and JavaScript. I have a passion for solving puzzles and
-            learning new solutions to resolving issues. I want to be a part of a highly motivated, intellectually driven
-            team to create innovative software.
-        </p>
-
-        <hr>
-        <h1>Web Development Technologies:</h1>
-        <p>HTML, CSS, JavaScript, Node.js, Java, MySQL, Mongo, MySQL, jQuery, React, Bootstrap, Mongoose, Sequelize, Express</p>
-        
-        <hr>
-        <h1>Experience:</h1>
-
-        <ul>
-            <li>Freelance Web Developer, Twin Cities MN</li>
-            <li>Activity Volunteer, St. Paul MN</li>
-            <li>Math Coach at Mathnasium </li>
-            <li>Electronics Team Member at Target</li>
-            <li>System Engineer at Fairview Health Services</li>
-            <li>Software Developer Intern at Sim Flite MN </li>
-
-        </ul>
+        <section id="primary">
+            <h1>Frontend Web Developer</h1>
+            <p>Get help with your website</p>
 
 
-    </section>
+        </section>
 
-    <footer>
-        Copyright
-    </footer>
+        <section id="card">
+            <img src="./public/images/Profile Picture.PNG" alt="">
+        </section>
 
+        <section id="education">
+            <div class="details">
+                <h3>Education</h3>
+                <p class="bullet">B.S. Computer Science </p>
+                <p>Augsburg College</p>
+                <br>
+                <p class="bullet">Full-Stack Web Certificaiton </p>
+                <p>University of Minnesota</p>
+                <!-- <a href="#">Learn more</a> -->
+            </div>
 
+        </section>
+
+        <section id="experience">
+            <div class="details">
+                <h3> Recent Experience</h3>
+                <p class="bullet">Quality Assurance Specialist</p>
+                <p>Prime Theraputics</p>
+                <br>
+                <p class="bullet">Front End Web Developer</p>
+                <p>JP Ecommerce</p>
+             
+                <!-- <a href="#">Learn more</a> -->
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="details">
+                <h3>Projects</h3>
+                <p class="bullet">Web Store Redesign</p>
+                <p>For: JP Ecommerce</p>
+                <br>
+                <p class="bullet">Marketing Site</p>
+                <p>For: Spectrum Connections</p>
+                <br>
+                <!-- <a href="#">Learn more</a> -->
+            </div>
+
+        </section>
+
+        <section id="skills">
+            <div class="details">
+                <h3>skills</h3>
+                <p class="bullet">HTML, CSS</p>
+                <p class="bullet">Javascript, jQuery</p>
+                <p class="bullet">Node.js, React</p>
+                <p class="bullet">... and much more!</p>
+                              
+                <!-- <a href="#">Learn more</a> -->
+            </div>
+
+        </section>
+    </main>
 </body>
 
 </html>

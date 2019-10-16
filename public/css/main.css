@@ -1,0 +1,180 @@
+body, html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0;
+  background-color: #314b85;
+}
+
+body #bg {
+  -webkit-clip-path: polygon(100% 0, 100% 68%, 61% 100%, 0 100%, 0 0);
+          clip-path: polygon(100% 0, 100% 68%, 61% 100%, 0 100%, 0 0);
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  position: fixed;
+  background-color: #314b85;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/office.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/office.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+@media (min-width: 840px) {
+  body #bg {
+    -webkit-clip-path: polygon(0 0, 81% 0, 63% 100%, 0% 100%);
+            clip-path: polygon(0 0, 81% 0, 63% 100%, 0% 100%);
+  }
+}
+
+body header {
+  height: 70px;
+}
+
+body header a {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+  text-transform: uppercase;
+  line-height: 3em;
+  font-size: 2em;
+}
+
+@media (min-width: 840px) {
+  main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "primary card";
+  }
+}
+
+@media (min-width: 840px) {
+  main section#card {
+    grid-area: card;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 1em;
+  }
+}
+
+main section#card img {
+  border-radius: 200px;
+  margin: 50px auto 250px auto;
+  width: 250px;
+  height: 250px;
+  display: block;
+  position: relative;
+}
+
+main section#primary {
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+@media (min-width: 840px) {
+  main section#primary {
+    grid-area: primary;
+    text-align: left;
+    margin: 4em 0 0 4em;
+  }
+}
+
+main section#primary h1 {
+  font-size: 3em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 840px) {
+  main section#primary h1 {
+    width: 30%;
+    font-size: 4em;
+    line-height: .9em;
+  }
+}
+
+main section#primary p {
+  font-size: 1.4em;
+}
+
+main section#primary a {
+  color: black;
+  border-radius: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #fff6bb;
+  display: block;
+  text-align: center;
+  margin: 50px auto 0 auto;
+  padding: 20px;
+}
+
+@media (min-width: 840px) {
+  main section#primary a {
+    display: inline-block;
+    padding: 20px 80px;
+  }
+}
+
+main section > .details {
+  color: #fff;
+  font-size: 1.4em;
+  padding: 20px;
+  text-align: center;
+}
+
+main section > .details h3 {
+  font-size: 2em;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+main section > .details .bullet {
+  font-size: 1.2em;
+  display: list-item;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+main section > .details p {
+  line-height: 1.4em;
+}
+
+main section > .details a {
+  color: black;
+  border-radius: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #fff6bb;
+  display: block;
+  text-align: center;
+  margin: 50px auto 50px auto;
+  padding: 20px;
+}
+
+@media (min-width: 840px) {
+  main section > .details a {
+    display: inline-block;
+    padding: 20px 80px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
